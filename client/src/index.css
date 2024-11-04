@@ -1,0 +1,192 @@
+
+.main {
+  background: rgb(34,193,195);
+  background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(249,188,255,1) 100%); 
+  flex: 1 0 0;
+  border-left: 2px solid #c9c9c9;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 18%;
+  padding: 30px 0;
+  height: 100vh;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #7c7c7c;
+  margin: 1em auto;
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  margin: 10px 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: inherit;
+  color: green;
+  font-size: 1.1em;
+  margin: 0;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+.register, .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.registerFlex, .loginFlex {
+  width: 67%;
+  height: 67%;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0 #0F110C;
+}
+
+.data-icons {
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0 #0F110C;
+  margin-bottom: 0.6em;
+  background-color: white;
+}
+
+.data-icons svg {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: rgb(62, 62, 242);
+}
+
+.inactive-icon {
+  color: gray;
+}
+
+.graph {
+  padding: 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0 #0F110C;
+}
+
+.icons > *:hover {
+  border-radius: 7px;
+  transition: background-color 0.5s;
+}
+
+.icons > *:hover {
+  background-color: #e3e3e3;
+}
+
+.link {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: green;
+}
+.expense{
+  padding:4px;
+  width:80vw;
+  height:60vh;
+  justify-content:end;
+
+}
+.signup-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px; /* Optional: add some padding for small screens */
+  box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.image-container {
+  flex: 1; /* Allow the image container to grow */
+  max-width: 800px; /* Max width for larger screens */
+  margin: 0 20px; /* Add horizontal margin for spacing */
+}
+
+.image-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 60vh; /* Maintain max height while allowing flexibility */
+  border-radius: 10px; /* Optional: round corners */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Optional: add shadow */
+}
+
+@media (max-width: 768px) {
+  .signup-page {
+    flex-direction: column; /* Stack elements on smaller screens */
+    justify-content: flex-start; /* Align items to start */
+  }
+
+  .image-container {
+    margin: 0; /* Remove margins for smaller screens */
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
+  .image-container img {
+    max-height: 40vh; /* Reduce max height on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-page {
+    padding: 10px; /* Reduce padding further for very small screens */
+  }
+
+  .image-container img {
+    max-height: 30vh; /* Further reduce height on very small screens */
+  }
+}
+
+.form-container {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Set max width for form */
+  padding: 20px; /* Padding inside the form */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 15px; /* Round corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.navbar {
+  background-color: #ffcccb; /* Light gray background color */
+  border-bottom: 1px solid #e0e0e0; /* Optional: bottom border for separation */
+}
+
+.navbar .nav-link {
+  color: #333; /* Darker text color for better contrast */
+}
+
+.navbar .btn-primary {
+  margin-left: 1rem; /* Add space between user name and logout button */
+}
